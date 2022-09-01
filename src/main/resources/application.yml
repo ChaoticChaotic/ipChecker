@@ -1,0 +1,35 @@
+server:
+  port: 8080
+  error:
+    include-message: always
+    include-binding-errors: always
+    include-stacktrace: always
+    include-exception: false
+
+spring:
+  application:
+    name: ipChecker
+  servlet:
+    multipart:
+      enabled: true
+      location: ${java.io.tmpdir}
+      max-file-size: 12800KB
+      max-request-size: 15000KB
+  output:
+    ansi:
+      enabled: always
+
+
+files:
+  folder: files/
+
+feign:
+  client:
+    config:
+      default:
+        connectTimeout: 120000
+        readTimeout: 120000
+
+#statistic:
+#  client:
+#    url: http://localhost:8081/api/statistics/

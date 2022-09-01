@@ -1,4 +1,4 @@
-package com.chaoticchaotic.ipchecker;
+package com.chaoticchaotic.ipchecker.client;
 
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.http.ResponseEntity;
